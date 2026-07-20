@@ -353,7 +353,7 @@ private fun PatchOptionsBody(modifier: Modifier, onAddEmbed: () -> Unit) {
             onClick = { bypassExpanded = true },
             surface = {
                 SettingsItem(
-                    icon = Icons.Outlined.RemoveModerator,
+                    icon = Icons.Outlined.Shield,
                     title = stringResource(R.string.patch_sigbypass),
                     desc = sigBypassLvStr(viewModel.sigBypassLevel)
                 )

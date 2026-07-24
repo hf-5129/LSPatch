@@ -341,7 +341,7 @@ private fun PatchOptionsBody(modifier: Modifier, onAddEmbed: () -> Unit) {
         SettingsCheckBox(
             modifier = Modifier.clickable { viewModel.injectDex = !viewModel.injectDex },
             checked = viewModel.injectDex,
-            icon = Icons.Outlined.Code,
+            icon = Icons.Outlined.HourglassEmpty,
             title = stringResource(R.string.patch_inject_dex),
             desc = stringResource(R.string.patch_inject_dex_desc)
         )

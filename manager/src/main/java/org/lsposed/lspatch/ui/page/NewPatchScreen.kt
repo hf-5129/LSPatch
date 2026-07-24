@@ -328,7 +328,8 @@ private fun PatchOptionsBody(modifier: Modifier, onAddEmbed: () -> Unit) {
                 .clickable { viewModel.debuggable = !viewModel.debuggable },
             checked = viewModel.debuggable,
             icon = Icons.Outlined.BugReport,
-            title = stringResource(R.string.patch_debuggable)
+            title = stringResource(R.string.patch_debuggable),
+            desc = stringResource(R.string.patch_debuggable)
         )
         SettingsCheckBox(
             modifier = Modifier.clickable { viewModel.overrideVersionCode = !viewModel.overrideVersionCode },

@@ -12,7 +12,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.KeyboardCommandKey
-import androidx.compose.material.icons.outlined.BugReport
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -236,7 +236,7 @@ private fun DetailPatchLogs() {
     SettingsSwitch(
         modifier = Modifier.clickable { Configs.detailPatchLogs = !Configs.detailPatchLogs },
         checked = Configs.detailPatchLogs,
-        icon = Icons.Outlined.BugReport,
+        icon = Icons.Outlined.Info,
         title = stringResource(R.string.settings_detail_patch_logs)
     )
 }

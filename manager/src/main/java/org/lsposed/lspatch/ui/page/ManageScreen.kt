@@ -38,7 +38,8 @@ fun ManageScreen(
     ) { innerPadding ->
         Box(Modifier.padding(innerPadding)) {
             Column {
-                PrimaryTabRow(
+                SecondaryTabRow(
+                    contentColor = MaterialTheme.colorScheme.secondary,
                     selectedTabIndex = pagerState.currentPage
                 ) {
                     Tab(

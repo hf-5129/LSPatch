@@ -41,7 +41,8 @@ fun ManageScreen(
                 PrimaryTabRow(
                     contentColor = MaterialTheme.colorScheme.secondary,
                     selectedTabIndex = pagerState.currentPage,
-                    indicator = { }
+                    indicator = { },
+                    divider = { }
                 ) {
                     Tab(
                         selected = pagerState.currentPage == 0,
